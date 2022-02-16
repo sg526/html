@@ -1,0 +1,49 @@
+<html>
+<script>
+	function copyUpper(){
+		newmsg.value=""
+		let message=msg.value
+		let i=0
+		while (i<message.length){
+			if(message.charCodeAt(i)>=65 && message.charCodeAt(i)<=90){
+				newmsg.value+=message.substring(i,i+1)
+			}
+
+			i++
+		}
+	}
+function copylower(){
+		newmsg.value=""
+		let message=msg.value
+		let i=0
+		while (i<message.length){
+			if(message.charCodeAt(i)>=97 && message.charCodeAt(i)<=122){
+				newmsg.value+=message.substring(i,i+1)
+			}
+
+			i++
+		}
+	}
+function copydigits(){
+		newmsg.value=""
+		let message=msg.value
+		let i=0
+		while (i<message.length){
+			if(message.charCodeAt(i)>=48 && message.charCodeAt(i)<=57){
+				newmsg.value+=message.substring(i,i+1)
+			}
+
+			i++
+		}
+	}
+
+</script>
+
+Enter Message:<input type="text" id="msg"> <br>
+<input type="Button" value="Copy Upper Case Letters" onclick="copyUpper()">
+<input type="Button" value="Copy Lower Case Letters" onclick="copylower()">
+<input type="Button" value="Copy Digits" onclick="copydigits()">
+<br>
+New Message:<input type="text" id="newmsg"> 
+<br>
+</html>

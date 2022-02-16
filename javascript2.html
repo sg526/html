@@ -1,0 +1,106 @@
+<html>
+<script>
+	function addition(){
+		if(txt1.value==""){
+			alert("First number is missing")
+			txt1.focus()
+		}
+		else{
+			if (txt2.value==""){
+				alert("You have missed the Second number")
+				txt2.focus()
+			}else{
+				let no1= txt1.value;
+				let no2= txt2.value;
+				let result=parseInt(no1)+parseInt(no2);
+				txt3.value=result;
+			}
+		}
+	}
+
+function minus(){
+		if(txt1.value==""){
+			alert("First number is missing")
+			txt1.focus()
+		}
+		else{
+			if (txt2.value==""){
+				alert("You have missed the Second number")
+				txt2.focus()
+			}else{
+				let no1= txt1.value;
+				let no2= txt2.value;
+				let result=parseInt(no1)-parseInt(no2);
+				txt3.value=result;
+			}
+		}
+	}
+
+function multiplication(){
+		if(txt1.value==""){
+			alert("First number is missing")
+			txt1.focus()
+		}
+		else{
+			if (txt2.value==""){
+				alert("You have missed the Second number")
+				txt2.focus()
+			}else{
+				let no1= txt1.value;
+				let no2= txt2.value;
+				let result=parseInt(no1)*parseInt(no2);
+				txt3.value=result;
+			}
+		}
+	}
+function divide(){
+		if(txt1.value==""){
+			alert("First number is missing")
+			txt1.focus()
+		}
+		else{
+			if (txt2.value==""){
+				alert("You have missed the Second number")
+				txt2.focus()
+			}else{
+				let no1= txt1.value;
+				let no2= txt2.value;
+				let result=parseInt(no1)/parseInt(no2);
+				txt3.value=result;
+			}
+		}
+	}
+</script>
+
+First Input <input id="txt1" type="text">
+<br>
+Second Number: <input id="txt2" type="text" >
+<br>
+<input
+	id="btn"
+	type="Button"
+	value="+"
+	onClick="addition()"
+>
+<input 
+	id="btn"
+	type="Button"
+	value="-"
+	onclick="minus()"
+>
+<input 
+	id="btn"
+	type="Button"
+	value="x"
+	onclick="multiplication()"
+>
+<input 
+	id="btn"
+	type="Button"
+	value="/"
+	onclick="divide()"
+>
+<br>
+Result:<input id="txt3" type="text">
+<br>
+</html>
